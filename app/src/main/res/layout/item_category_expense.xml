@@ -7,7 +7,6 @@
     android:layout_margin="4dp"
     android:background="?attr/colorOnBackground">
 
-    <!-- اسم الفئة -->
     <TextView
         android:id="@+id/tvCategoryName"
         android:layout_width="0dp"
@@ -16,7 +15,6 @@
         android:textSize="16sp"
         android:textColor="?android:attr/textColorPrimary" />
 
-    <!-- المصاريف -->
     <TextView
         android:id="@+id/tvCategoryExpense"
         android:layout_width="wrap_content"

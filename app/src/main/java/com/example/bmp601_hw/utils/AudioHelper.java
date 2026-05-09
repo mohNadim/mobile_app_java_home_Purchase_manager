@@ -16,7 +16,6 @@ public class AudioHelper {
     public AudioHelper(Context context) {
         this.context = context;
         try {
-            // إنشاء ToneGenerator على قناة STREAM_MUSIC
             toneGenerator = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
         } catch (Exception e) {
             e.printStackTrace();
@@ -25,14 +24,12 @@ public class AudioHelper {
 
     public void playSaveSound() {
         if (toneGenerator != null) {
-            // تشغيل نبرة تأكيد (صوت تنبيه)
             toneGenerator.startTone(ToneGenerator.TONE_PROP_BEEP, 200);
         }
     }
 
     public void playClickSound() {
         if (toneGenerator != null) {
-            // تشغيل نبرة قصيرة للنقر
             toneGenerator.startTone(ToneGenerator.TONE_PROP_PROMPT, 50);
         }
     }

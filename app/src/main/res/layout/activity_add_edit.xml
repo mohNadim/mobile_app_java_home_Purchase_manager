@@ -7,7 +7,6 @@
     android:fitsSystemWindows="true"
     android:background="?attr/colorBackground">
 
-    <!-- عنوان النشاط -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
@@ -18,7 +17,6 @@
         android:textColor="?android:attr/textColorPrimary"
         android:layout_marginBottom="16dp" />
 
-    <!-- ScrollView لتمكين التمرير إذا لزم الأمر -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -29,7 +27,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- اسم العنصر -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,7 +41,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- الفئة (Spinner) -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,7 +55,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- السعر -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,7 +69,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- الكمية -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,7 +83,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- التاريخ -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,7 +99,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- عرض التكلفة الإجمالية المحسوبة -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -140,7 +132,6 @@
 
     </ScrollView>
 
-    <!-- أزرار الحفظ والإلغاء -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

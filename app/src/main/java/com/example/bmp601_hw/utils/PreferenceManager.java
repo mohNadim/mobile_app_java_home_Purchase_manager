@@ -12,7 +12,6 @@ public class PreferenceManager {
     private static final String PREFERENCE_FILE_NAME = "app_preferences";
     private static final String KEY_THEME = "selected_theme";
 
-    // أنماط الثيمات المتاحة
     public static final String THEME_LIGHT = "light";
     public static final String THEME_DARK = "dark";
     public static final String THEME_ACCENT = "accent";

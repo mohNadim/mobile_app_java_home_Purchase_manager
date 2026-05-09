@@ -33,7 +33,6 @@ public class StatisticsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // تطبيق الثيم يجب أن يكون قبل super.onCreate
         preferenceManager = new PreferenceManager(this);
         applyTheme(preferenceManager.getTheme());
 
@@ -41,7 +40,6 @@ public class StatisticsActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_statistics);
 
-        // تهيئة المكونات
         initializeComponents();
         loadStatistics();
     }
@@ -55,7 +53,6 @@ public class StatisticsActivity extends AppCompatActivity {
         tvTotalExpenses = findViewById(R.id.tvTotalExpenses);
         recyclerViewCategoryExpenses = findViewById(R.id.recyclerViewCategoryExpenses);
 
-        // إعداد RecyclerView
         recyclerViewCategoryExpenses.setLayoutManager(new LinearLayoutManager(this));
         categoryExpenseAdapter = new CategoryExpenseAdapter(new ArrayList<>(), this);
         recyclerViewCategoryExpenses.setAdapter(categoryExpenseAdapter);
@@ -65,11 +62,9 @@ public class StatisticsActivity extends AppCompatActivity {
      * تحميل الإحصائيات
      */
     private void loadStatistics() {
-        // حساب إجمالي المصاريف
         double totalExpenses = databaseHelper.getTotalExpenses();
         tvTotalExpenses.setText(String.format(Locale.getDefault(), "%.2f", totalExpenses));
 
-        // حساب المصاريف حسب الفئة
         List<Purchase> purchases = databaseHelper.getAllPurchases();
         Map<String, Double> categoryExpenses = new HashMap<>();
 
@@ -78,16 +73,13 @@ public class StatisticsActivity extends AppCompatActivity {
             categoryExpenses.put(category, categoryExpenses.getOrDefault(category, 0.0) + purchase.getTotalCost());
         }
 
-        // تحويل الخريطة إلى قائمة من الفئات
         List<Category> categoryList = new ArrayList<>();
         for (Map.Entry<String, Double> entry : categoryExpenses.entrySet()) {
             Category category = new Category(entry.getKey());
-            // نضع المبلغ في الوصف كحل مؤقت (سيتم استخدام حقل مخصص لاحقاً)
             category.setDescription(String.valueOf(entry.getValue()));
             categoryList.add(category);
         }
 
-        // تحديث الأداب
         categoryExpenseAdapter.updateCategories(categoryList);
     }
 

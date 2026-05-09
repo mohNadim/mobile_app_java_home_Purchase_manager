@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onItemLongClick(Purchase purchase) {
-                // Keep for alternative long click behaviour
             }
 
             @Override
