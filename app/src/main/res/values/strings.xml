@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BMP601_HW</string>
+    
+    <!-- Main Activity -->
+    <string name="add_purchase">إضافة مشتري</string>
+    <string name="menu_filter">تصفية</string>
+    <string name="menu_statistics">إحصائيات</string>
+    <string name="menu_theme">تغيير الثيم</string>
+    <string name="filter_by_category">تصفية حسب الفئة</string>
+    <string name="filter_by_date">تصفية حسب التاريخ</string>
+    <string name="show_all">عرض الكل</string>
+    
+    <!-- Add/Edit Activity -->
+    <string name="add_edit_title">إضافة مشتري جديد</string>
+    <string name="item_name">اسم العنصر</string>
+    <string name="category">الفئة</string>
+    <string name="price">السعر</string>
+    <string name="quantity">الكمية</string>
+    <string name="date">التاريخ</string>
+    <string name="total_cost">التكلفة الإجمالية</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="delete">حذف</string>
+    <string name="edit">تعديل</string>
+    
+    <!-- Statistics Activity -->
+    <string name="statistics_title">الإحصائيات</string>
+    <string name="total_expenses">إجمالي المصاريف</string>
+    <string name="expenses_by_category">المصاريف حسب الفئة</string>
+    
+    <!-- Themes -->
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">مظلم</string>
+    <string name="theme_accent">مميز</string>
+    
+</resources>

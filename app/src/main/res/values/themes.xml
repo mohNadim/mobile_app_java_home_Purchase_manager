@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- الثيم الافتراضي (Light Theme) -->
+    <style name="Theme.BMP601_HW" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorPrimaryDark">@color/light_primary_variant</item>
+        <item name="colorAccent">@color/light_secondary</item>
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="android:textColorPrimary">@color/light_on_background</item>
+        <item name="android:textColorSecondary">@color/gray_dark</item>
+        <!-- Custom attributes -->
+        <item name="colorBackground">@color/light_background</item>
+        <item name="colorOnPrimary">@color/light_on_primary</item>
+        <item name="colorOnBackground">@color/light_on_background</item>
+        <item name="colorOnSecondary">@color/light_on_secondary</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorOnSurface">@color/light_on_surface</item>
+    </style>
+
+    <!-- Light Theme -->
+    <style name="Theme.BMP601_HW.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorPrimaryDark">@color/light_primary_variant</item>
+        <item name="colorAccent">@color/light_secondary</item>
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="android:textColorPrimary">@color/light_on_background</item>
+        <item name="android:textColorSecondary">@color/gray_dark</item>
+        <!-- Custom attributes -->
+        <item name="colorBackground">@color/light_background</item>
+        <item name="colorOnPrimary">@color/light_on_primary</item>
+        <item name="colorOnBackground">@color/light_on_background</item>
+        <item name="colorOnSecondary">@color/light_on_secondary</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorOnSurface">@color/light_on_surface</item>
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="Theme.BMP601_HW.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryDark">@color/dark_primary_variant</item>
+        <item name="colorAccent">@color/dark_secondary</item>
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="android:textColorPrimary">@color/dark_on_background</item>
+        <item name="android:textColorSecondary">@color/gray_light</item>
+        <!-- Custom attributes -->
+        <item name="colorBackground">@color/dark_background</item>
+        <item name="colorOnPrimary">@color/dark_on_primary</item>
+        <item name="colorOnBackground">@color/dark_on_background</item>
+        <item name="colorOnSecondary">@color/dark_on_secondary</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/dark_on_surface</item>
+    </style>
+
+    <!-- Accent Theme -->
+    <style name="Theme.BMP601_HW.Accent" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/accent_primary</item>
+        <item name="colorPrimaryDark">@color/accent_primary_variant</item>
+        <item name="colorAccent">@color/accent_secondary</item>
+        <item name="android:colorBackground">@color/accent_background</item>
+        <item name="android:textColorPrimary">@color/accent_on_background</item>
+        <item name="android:textColorSecondary">@color/gray_dark</item>
+        <!-- Custom attributes -->
+        <item name="colorBackground">@color/accent_background</item>
+        <item name="colorOnPrimary">@color/accent_on_primary</item>
+        <item name="colorOnBackground">@color/accent_on_background</item>
+        <item name="colorOnSecondary">@color/accent_on_secondary</item>
+        <item name="colorSurface">@color/accent_surface</item>
+        <item name="colorOnSurface">@color/accent_on_surface</item>
+    </style>
+
+</resources>
